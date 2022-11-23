@@ -47,3 +47,6 @@ def check_row(concat_final) :
     for j in range(9):
         return concat_final.loc[j].is_unique
 
+def arr_tolist(arr):
+    arr_list = arr.tolist()
+    return arr_list
