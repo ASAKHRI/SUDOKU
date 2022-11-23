@@ -54,3 +54,7 @@ def arr_tolist(arr):
 def set_list(arr_list): 
     arr_set = set(arr_list)
     return arr_set
+
+def test_arr(arr_set):
+    return len(arr_set) == 9
+    
