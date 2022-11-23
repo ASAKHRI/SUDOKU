@@ -50,3 +50,7 @@ def check_row(concat_final) :
 def arr_tolist(arr):
     arr_list = arr.tolist()
     return arr_list
+
+def set_list(arr_list): 
+    arr_set = set(arr_list)
+    return arr_set
