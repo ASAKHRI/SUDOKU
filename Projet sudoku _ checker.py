@@ -57,4 +57,21 @@ def set_list(arr_list):
 
 def test_arr(arr_set):
     return len(arr_set) == 9
-    
+
+arr = []
+arr = np.array(arr)
+
+def check_df():
+    mi = 0
+    for k in df_compact : 
+        arr = pd.unique(k.loc[0])
+        arr = np.append(arr,pd.unique(k.loc[1]))
+        arr = np.append(arr,pd.unique(k.loc[2]))
+        pouet = test_arr(set_list(arr_tolist(arr)))
+        if pouet == True :
+            mi = mi + 1
+        else : continue
+    print(mi)
+    return mi == 9
+
+check_df()
