@@ -37,7 +37,13 @@ concat_g_h_i = concat_g_h_i.loc[~concat_g_h_i.index.duplicated(keep='first')]
 concat_final = pd.concat([concat_a_b_c_d_1,concat_g_h_i],axis=0,ignore_index=True)
 print(concat_final)
 
+df_compact = [a_df,b_df,c_df,d_df,e_df,f_df,g_df,h_df,i_df]
+
 def check_column(concat_final) : 
     for i in range(9):
         return concat_final[i].is_unique   
+
+def check_row(concat_final) : 
+    for j in range(9):
+        return concat_final.loc[j].is_unique
 
