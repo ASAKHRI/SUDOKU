@@ -75,3 +75,11 @@ def check_df():
     return mi == 9
 
 check_df()
+
+def sudoku_checker(concat_final) : 
+    if check_column(concat_final) : 
+        if check_row(concat_final): 
+            return check_df(df_compact) == True
+    else : return False
+
+sudoku_checker(concat_final)
